@@ -1,8 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
 // SFML - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2015 Marco Antognini (antognini.marco@gmail.com),
-//                         Laurent Gomila (laurent@sfml-dev.org)
+// Copyright (C) 2007-2015 Laurent Gomila (laurent@sfml-dev.org)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -23,30 +22,35 @@
 //
 ////////////////////////////////////////////////////////////
 
+#ifndef SFML_SFML_WINDOW_HPP
+#define SFML_SFML_WINDOW_HPP
+
 ////////////////////////////////////////////////////////////
 // Headers
 ////////////////////////////////////////////////////////////
-#include "ResourcePath.h"
-#import <Foundation/Foundation.h>
+
+#include <SFML/System.hpp>
+#include <SFML/Window/Context.hpp>
+#include <SFML/Window/ContextSettings.hpp>
+#include <SFML/Window/Event.hpp>
+#include <SFML/Window/Joystick.hpp>
+#include <SFML/Window/Keyboard.hpp>
+#include <SFML/Window/Mouse.hpp>
+#include <SFML/Window/Sensor.hpp>
+#include <SFML/Window/Touch.hpp>
+#include <SFML/Window/VideoMode.hpp>
+#include <SFML/Window/Window.hpp>
+#include <SFML/Window/WindowHandle.hpp>
+#include <SFML/Window/WindowStyle.hpp>
+
+
+
+#endif // SFML_SFML_WINDOW_HPP
 
 ////////////////////////////////////////////////////////////
-std::string resourcePath(void)
-{
-    NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
-
-    std::string rpath;
-    NSBundle* bundle = [NSBundle mainBundle];
-
-    if (bundle == nil) {
-#ifdef DEBUG
-        NSLog(@"bundle is nil... thus no resources path can be found.");
-#endif
-    } else {
-        NSString* path = [bundle resourcePath];
-        rpath = [path UTF8String] + std::string("/");
-    }
-
-    [pool drain];
-
-    return rpath;
-}
+/// \defgroup window Window module
+///
+/// Provides OpenGL-based windows, and abstractions for
+/// events and input handling.
+///
+////////////////////////////////////////////////////////////

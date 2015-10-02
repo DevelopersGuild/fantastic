@@ -34,7 +34,7 @@
 		5FD0A8231BB35446003B9327 /* vorbisfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD0A80A1BB35446003B9327 /* vorbisfile.framework */; };
 		5FD0A8241BB35446003B9327 /* vorbisfile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD0A80A1BB35446003B9327 /* vorbisfile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5FD0A82F1BB3563F003B9327 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD0A82C1BB3563F003B9327 /* main.cpp */; settings = {ASSET_TAGS = (); }; };
-		5FD0A8301BB3563F003B9327 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5FD0A82E1BB3563F003B9327 /* ResourcePath.mm */; settings = {ASSET_TAGS = (); }; };
+		5FD0A8301BB3563F003B9327 /* ResourcePathMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5FD0A82E1BB3563F003B9327 /* ResourcePathMac.mm */; settings = {ASSET_TAGS = (); }; };
 		5FD0A83E1BB356DC003B9327 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = 5FD0A83B1BB356DC003B9327 /* Audio */; settings = {ASSET_TAGS = (); }; };
 		5FD0A83F1BB356DC003B9327 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 5FD0A83C1BB356DC003B9327 /* Fonts */; settings = {ASSET_TAGS = (); }; };
 		5FD0A8401BB356DC003B9327 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 5FD0A83D1BB356DC003B9327 /* Images */; settings = {ASSET_TAGS = (); }; };
@@ -82,7 +82,7 @@
 		5FD0A80A1BB35446003B9327 /* vorbisfile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vorbisfile.framework; path = MacFrameworks/vorbisfile.framework; sourceTree = "<group>"; };
 		5FD0A82C1BB3563F003B9327 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Source/main.cpp; sourceTree = SOURCE_ROOT; };
 		5FD0A82D1BB3563F003B9327 /* ResourcePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResourcePath.h; path = Source/ResourcePath.h; sourceTree = SOURCE_ROOT; };
-		5FD0A82E1BB3563F003B9327 /* ResourcePath.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ResourcePath.mm; path = Source/ResourcePath.mm; sourceTree = SOURCE_ROOT; };
+		5FD0A82E1BB3563F003B9327 /* ResourcePathMac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ResourcePathMac.mm; path = Source/ResourcePathMac.mm; sourceTree = SOURCE_ROOT; };
 		5FD0A83B1BB356DC003B9327 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = SOURCE_ROOT; };
 		5FD0A83C1BB356DC003B9327 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = SOURCE_ROOT; };
 		5FD0A83D1BB356DC003B9327 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = SOURCE_ROOT; };
@@ -156,7 +156,7 @@
 			children = (
 				5FD0A82C1BB3563F003B9327 /* main.cpp */,
 				5FD0A82D1BB3563F003B9327 /* ResourcePath.h */,
-				5FD0A82E1BB3563F003B9327 /* ResourcePath.mm */,
+				5FD0A82E1BB3563F003B9327 /* ResourcePathMac.mm */,
 				5FF4FEA21BB33EE60079FC4C /* Resources */,
 				5FF4FE9B1BB33EE60079FC4C /* Supporting Files */,
 				5FD0A8261BB354C2003B9327 /* Mac Frameworks */,
@@ -269,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FD0A8301BB3563F003B9327 /* ResourcePath.mm in Sources */,
+				5FD0A8301BB3563F003B9327 /* ResourcePathMac.mm in Sources */,
 				5FD0A82F1BB3563F003B9327 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
